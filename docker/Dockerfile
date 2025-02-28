@@ -12,7 +12,7 @@ RUN git clone https://github.com/mma-marinov/pacman.git .
 # Install app dependencies
 RUN npm install
 # Install the @splunk/otel package
-RUN npm install @splunk/otel
+RUN npm install --save @splunk/otel
 # Set appropriate permissions
 RUN chmod -R go+r node_modules/@splunk/otel
 
