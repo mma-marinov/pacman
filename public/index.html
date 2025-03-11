@@ -273,9 +273,6 @@ O11y Cloud RUM instrumented!
         </div>
 
         <div class="controls" id="game-buttons">
-        <!-- Will be moved to Instructions
-        <p class="nomobile">Use W-A-S-D keys to navigate Pac-Man</p>
-        -->
 <!-- Instrumenting a custom span for Pac-Man movement buttons -->
     		<script>
         		var span = tracer.startSpan('PacmanMovement', {
@@ -285,16 +282,11 @@ O11y Cloud RUM instrumented!
        			});
 			span.end();
     		</script>
-            <!-- OLD Buttons -->
-            <div>
                 <span id="up" class="controlButton">&uarr;</span>
-            </div>
-            <div>
                 <span id="left" class="controlButton">&larr;</span>
                 <span id="down" class="controlButton">&darr;</span>
                 <span id="right" class="controlButton">&rarr;</span>
             </div>
-
         </div>
         <!-- inGame Controls End -->
 
