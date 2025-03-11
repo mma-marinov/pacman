@@ -95,7 +95,7 @@ O11y Cloud RUM instrumented!
 	<!-- Instrumenting a custom span for an empty Highscore List as MongoDB IP is wrong -->
     <script>
     	var span = tracer.startSpan('EmptyHigscoreList', {
-        	attributes: { 	'workflow.name' : 'highscore',
+        	attributes: { 	'workflow.name' : 'Highscore',
                          	'error': true,
                          	'error.message': 'Custom Error: Highscore list is  empty! The onnection to MongoDB searches for a different IP!',
                          	'userID': 'MarinMarinov'
@@ -282,7 +282,10 @@ O11y Cloud RUM instrumented!
        			});
 			span.end();
     		</script>
+            <div>
                 <span id="up" class="controlButton">&uarr;</span>
+            </div>
+            <div>
                 <span id="left" class="controlButton">&larr;</span>
                 <span id="down" class="controlButton">&darr;</span>
                 <span id="right" class="controlButton">&rarr;</span>
